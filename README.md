@@ -1,118 +1,70 @@
 <div align="center">
 
-<img src="PR_Tech_logo.png" alt="PR TECH Logo" width="80"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=111111&height=200&section=header&text=PR%20TECH&fontSize=80&fontAlignY=35&animation=fadeIn&fontColor=ffffff" />
 
-# PR TECH — Portfolio Website
+## <a href="https://prtech.netlify.app/"><img src="https://readme-typing-svg.herokuapp.com?font=Space+Mono&weight=600&size=24&pause=1000&color=00FFCC&center=true&vCenter=true&width=600&lines=Premium+Web+Design;Next.js+Software+Development;Custom+AI+Solutions;Fast.+Scalable.+Zero+Page+Builders." alt="Typing SVG" /></a>
 
-**Premium Web Design · Software Development · AI Solutions**
+**The digital agency architecting the future of the web.**
+<br/>
 
-[![Live Site](https://img.shields.io/badge/🌐%20Live%20Site-Visit-00D084?style=for-the-badge)](https://github.com/PrakashWebDevX/PRTECH-PORTFOLIO)
-[![GitHub Stars](https://img.shields.io/github/stars/PrakashWebDevX/PRTECH-PORTFOLIO?style=for-the-badge&color=00D084)](https://github.com/PrakashWebDevX/PRTECH-PORTFOLIO/stargazers)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/prakashrue)
-[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram)](https://www.instagram.com/prak_ash_official)
+[![Visit Website](https://img.shields.io/badge/Official_Website-Black?style=for-the-badge&logo=react)](https://prtech.netlify.app/)
+[![Book A Call](https://img.shields.io/badge/Book_A_Call-White?style=for-the-badge&logo=phone&logoColor=black)](tel:+919787361860)
 
 </div>
 
----
+<br/>
 
-## 🚀 About This Project
+Welcome to **PR TECH**, a remote-first, premium digital agency bridging the gap between breathtaking aesthetic design and high-performance engineering. We deliver stunning, custom-coded web applications tailored to aggressively scale your brand and obliterate your competition. 
 
-This is the official portfolio website of **PR TECH**, a premium web design & software development agency founded by **Prakash** in March 2026. Built entirely with custom-coded HTML, CSS, and JavaScript — no templates, no page builders — this site reflects the same quality and performance delivered to clients.
-
-> *"No big team, no unnecessary meetings, no wasted hours. Just quality, built fast."*
+**No WordPress. No Page Builders. Just lightning-fast code.**
 
 ---
 
-## ✨ Features
+## ⚡ What We Deliver
 
-| Feature | Description |
-|---|---|
-| 🖱️ **Custom Cursor** | Magnetic glow cursor with smooth follower animation |
-| 🌊 **Infinite Marquee** | Animated tech stack logo scroll with hover tooltips |
-| 📊 **Bento Grid** | Modern results/services section with live-chart SVG |
-| 🎨 **Glassmorphism UI** | Premium dark aesthetic with green accent (`#00D084`) |
-| 💬 **FAQ Accordion** | Smooth open/close animations for all FAQ items |
-| 📱 **Fully Responsive** | Optimized for desktop, tablet, and mobile |
-| ⚡ **Zero Dependencies** | Pure HTML + CSS + JS — no frameworks, blazing fast |
-| 🔍 **On-Page SEO** | Semantic HTML, meta tags, and optimized structure |
+| **Service** | **Description** |
+| :--- | :--- |
+| **🎨 Premium Web Design** | Custom UI/UX that captures your exact luxury atmosphere. Interactive, responsive, and gorgeous across all devices. |
+| **💻 Custom Software** | Robust web applications built using React, Next.js, Python, and Node.js. |
+| **🤖 AI Integration** | Embedding modern Artificial Intelligence tools (Computer Vision, Generative AI) directly into your business logic. |
+| **📈 Technical SEO** | Semantic HTML and sub-second load times ensuring you out-rank your competitors on Google. |
 
----
+<br/>
 
-## 🛠️ Tech Stack
+## 🏆 Featured Client Work
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Google Fonts](https://img.shields.io/badge/Google%20Fonts-Inter-4285F4?style=flat-square&logo=google&logoColor=white)
+From immersive fine dining platforms to local law firms, explore our hand-crafted digital solutions:
 
----
+*   ⚖️ **[Legal Associates & Co.](https://lawyer-website-sepia.vercel.app/)** — A highly trustworthy, secure online presence for a modern law firm.
+*   🏋️ **[Elite Fitness Club](https://gym-website-gamma-ten.vercel.app/)** — A high-performance concept site featuring membership tiers and intense interactive UI.
+*   🍽️ **[The Culinary Experience](https://restaurant-website-lac-seven.vercel.app/)** — An elegant, luxury fine-dining web application with built-in reservation logic.
+*   ☕ **[Artisan Brews](https://coffee-shop-website-green.vercel.app/)** — A cozy, warm e-commerce environment for a local coffee roastery.
+*   🧠 **[RP Vision AI](https://rp-vision-ai.vercel.app)** — Our flagship Generative AI product proving our capability in handling complex backend infrastructure.
 
-## 📁 Project Structure
+<br/>
 
-```
-PRTECH-PORTFOLIO/
-├── index.html              # Main HTML — all sections
-├── styles.css              # All styling, animations & responsive
-├── script.js               # Cursor FX, FAQ accordion, interactions
-├── PR_Tech_logo.png        # Brand logo (favicon)
-├── PRTECH.jpeg             # Founder photo (About section)
-├── logo.png                # Secondary logo asset
-├── portfolio_law.png       # Portfolio: Legal Associates
-├── portfolio_gym.png       # Portfolio: Elite Fitness Club
-├── portfolio_restaurant.png# Portfolio: The Culinary Experience
-├── portfolio_coffee.png    # Portfolio: Artisan Brews
-└── README.md               # You are here
-```
+## 💰 Transparent Pricing Scale
 
----
+We don't hide our prices behind arbitrary corporate quoting logic. 
 
-## 🎯 Sections
+- **The Landing Page (₹999):** A professional, highly-optimized 1-pager designed specifically to capture leads. Includes contact forms, automatic emails, and mobile scaling.
+- **The Standard Build (₹2,999):** The perfect launchpad for established businesses. Includes 3 custom pages, intricate animations, and SEO scaling.
+- **Complex Software:** Need something bigger? An e-commerce shop or custom SaaS tool? [Contact us](https://prtech.netlify.app/) for a tailored architectural roadmap.
 
-- **Hero** — Headline with animated SVG underline + CTA
-- **Tech Stack Marquee** — Infinite scroll of tools & technologies
-- **Portfolio** — Showcase of 4 real client websites
-- **Pricing** — Transparent pricing (Landing Page / Standard)
-- **Testimonials** — Client reviews with star ratings
-- **Results / Services** — Bento-grid with stats, SEO features & speed scores
-- **FAQ** — 7 common questions with smooth accordion
-- **AI Products** — RP Vision AI & RP Vision SEO showcase
-- **About** — Founder section with stats and GitHub link
-- **Footer / Contact** — CTA, social links, availability badge
+<br/>
 
----
+## 👤 The Engineer Behind The Code
 
-## 💼 Live Portfolio Projects
+**PR TECH** is solely operated by **Prakash**, a 20-year-old Full-Stack Developer & AI Innovator out of India. 
 
-| Project | Link |
-|---|---|
-| 🏋️ Elite Fitness Club | [gym-website-gamma-ten.vercel.app](https://gym-website-gamma-ten.vercel.app/) |
-| 🍽️ The Culinary Experience | [restaurant-website-lac-seven.vercel.app](https://restaurant-website-lac-seven.vercel.app/) |
-| ☕ Artisan Brews | [coffee-shop-website-green.vercel.app](https://coffee-shop-website-green.vercel.app/) |
-| 🤖 RP Vision AI | [rp-vision-ai.vercel.app](https://rp-vision-ai.vercel.app) |
-| 📈 RP Vision SEO | [rpvisionai.netlify.app](https://rpvisionai.netlify.app) |
-
----
-
-## 📞 Contact
-
-- 📱 **Phone / Book a Call:** [+91 97873 61860](tel:+919787361860)
-- 💼 **LinkedIn:** [linkedin.com/in/prakashrue](https://www.linkedin.com/in/prakashrue)
-- 📷 **Instagram:** [@prak_ash_official](https://www.instagram.com/prak_ash_official)
-- 🐙 **GitHub:** [PrakashWebDevX](https://github.com/PrakashWebDevX)
-
----
-
-## 📄 License
-
-© 2026 **PR TECH**. All rights reserved.  
-This source code is publicly viewable for portfolio purposes. Please do not reuse or redistribute without permission.
-
----
+> *"I manage and execute everything myself. No big teams delaying your project, no unnecessary corporate meetings, and absolutely no bloated 500-hour invoices for things that simply need to work. I operate fast, with elite quality, and zero compromises."*
 
 <div align="center">
-
-**Built with 💚 by Prakash — founder of PR TECH**
-
-*Premium websites. Real results. Zero compromise.*
-
+  <br/>
+  
+  ### Ready to build the future?
+  **[Start A Project With Us Today](https://prtech.netlify.app/)**
+  
+  <br/>
+  <sub>© 2026 PR TECH. All rights reserved.</sub>
 </div>

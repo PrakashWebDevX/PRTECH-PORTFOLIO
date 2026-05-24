@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderLusion();
 
     // Hover state expanding ring on interactive elements
-    const interactives = document.querySelectorAll('a, button, .faq-item, .logo-item, .btn-shiny, .btn-dark-sm, .social');
+    const interactives = document.querySelectorAll('a, button, .faq-item, .logo-item, .btn-shiny, .btn-dark-sm, .social, .btn-ai-tool');
     interactives.forEach(el => {
         el.addEventListener('mouseenter', () => {
             if(cursor) cursor.classList.add('hover');
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- SCROLL REVEAL ANIMATIONS ---
-    const blocksToReveal = document.querySelectorAll('.section-header, .portfolio-card, .pricing-card, .testimonial-card, .bento-card, .bento-mini, .faq-card, .product-card, .about-card');
+    const blocksToReveal = document.querySelectorAll('.section-header, .portfolio-card, .pricing-card, .testimonial-card, .bento-card, .bento-mini, .faq-card, .product-card, .about-card, .ai-tool-card');
     
     // Automatically flag elements for CSS animation without cluttering HTML
     blocksToReveal.forEach((el, index) => {

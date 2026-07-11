@@ -20,8 +20,12 @@
     <!-- Floating Navbar -->
     <nav class="navbar">
         <div class="nav-brand">
-            <a href="#" style="text-decoration: none; display: flex; align-items: center;">
-                <img src="logo_horizontal_new.png" alt="PRTECH.AI" class="navbar-logo">
+            <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                <img src="logo.png" alt="PRTECH Logo" class="logo-img">
+                <div class="brand-text-container">
+                    <span class="brand-title">PRTECH<span class="text-gradient-blue">.AI</span></span>
+                    <span class="brand-subtitle">Engineering Intelligent Agents</span>
+                </div>
             </a>
         </div>
         <ul class="nav-links">
@@ -32,86 +36,384 @@
             <li><a href="#about">About</a></li>
         </ul>
         <div class="nav-cta">
-            <a href="tel:+919787361860" class="btn-dark-sm"><span class="blink-text">Book a Call</span></a>
+            <a href="tel:+919787361860" class="btn-dark-sm"><span>✦ Book a Call ✦</span></a>
         </div>
     </nav>
 
     <!-- Main Content Area with Grid Background -->
     <div class="hero-bg-wrapper">
-        <main>
-            <!-- Hero Section -->
-            <section class="hero">
-                <h1 class="hero-title">
-                    We build websites that <br>
-                    <span class="highlight-wrapper">
-                        grow your business
-                        <svg class="green-underline" width="530" height="20" viewBox="0 0 530 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <path d="M2.5 17.5C150 10 400 3 527.5 5" stroke="#00D084" stroke-width="5" stroke-linecap="round"/>
-                        </svg>
-                    </span>
-                </h1>
-                <p class="hero-subtitle">
-                    Premium web design, Next.js development, and SEO optimization. We<br>
-                    deliver stunning, high-performing websites tailored to scale your brand.
-                </p>
-                <div class="hero-cta">
-                    <a href="tel:+919787361860" class="btn-shiny">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="white"/></svg>
-                        <span class="blink-text">Book a Call</span>
-                    </a>
-                </div>
-            </section>
+        <!-- Concentric dotted background circles -->
+        <div class="bg-deco-circle bg-deco-circle-center"></div>
+        <div class="bg-deco-circle bg-deco-circle-left"></div>
+        <div class="bg-deco-circle bg-deco-circle-right"></div>
+        
+        <main class="hero-main-container">
+            <!-- Hero Section Grid -->
+            <div class="hero-grid-container">
+                
+                <!-- Left Column: Robot & Badges -->
+                <div class="hero-left-col">
+                    <!-- Connector lines using SVG -->
+                    <svg class="connector-lines" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M80 80 Q 50 140 100 220" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        <path d="M250 160 Q 220 220 180 270" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        <path d="M250 320 Q 200 340 140 370" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        <circle cx="100" cy="220" r="3" fill="#3B82F6"/>
+                        <circle cx="180" cy="270" r="3" fill="#3B82F6"/>
+                        <circle cx="140" cy="370" r="3" fill="#3B82F6"/>
+                    </svg>
 
-            <!-- Logos Section -->
-            <section class="logos-section">
+                    <!-- Robot Image -->
+                    <div class="robot-image-wrapper">
+                        <img src="hero_robot.png" alt="PRTECH AI Robot" class="robot-img">
+                    </div>
+
+                    <!-- Floating Badge 1: AI Agent -->
+                    <div class="floating-badge badge-ai-agent">
+                        <div class="badge-icon-blue">✦</div>
+                        <div class="badge-text-group">
+                            <span class="badge-title">AI Agent</span>
+                            <span class="badge-desc">Always working for your growth.</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2: Intelligent -->
+                    <div class="floating-badge badge-intelligent">
+                        <div class="badge-icon-blue">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-4.88 2.5 2.5 0 0 1 2.46-5.06zM14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-4.88 2.5 2.5 0 0 0-2.46-5.06z"/>
+                            </svg>
+                        </div>
+                        <div class="badge-text-group">
+                            <span class="badge-title">Intelligent</span>
+                            <span class="badge-desc">Understands your business.</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 3: Autonomous -->
+                    <div class="floating-badge badge-autonomous">
+                        <div class="badge-icon-blue">⚡</div>
+                        <div class="badge-text-group">
+                            <span class="badge-title">Autonomous</span>
+                            <span class="badge-desc">Automates tasks to save time.</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 4: Your AI Agent Status Card -->
+                    <div class="status-card-your-agent">
+                        <div class="status-avatar-wrapper">
+                            <img src="hero_robot.png" alt="Agent Icon" class="status-avatar">
+                            <span class="status-online-dot"></span>
+                        </div>
+                        <div class="status-info">
+                            <span class="status-name">Your AI Agent</span>
+                            <span class="status-text">Online</span>
+                        </div>
+                        <div class="status-waveform">
+                            <span class="wave-bar bar-1"></span>
+                            <span class="wave-bar bar-2"></span>
+                            <span class="wave-bar bar-3"></span>
+                            <span class="wave-bar bar-4"></span>
+                            <span class="wave-bar bar-5"></span>
+                            <span class="wave-bar bar-6"></span>
+                            <span class="wave-bar bar-7"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Center Column: Main Headline & CTA -->
+                <div class="hero-center-col">
+                    <section class="hero-text-content">
+                        <h1 class="hero-title">
+                            We build websites that <br>
+                            <span class="highlight-wrapper">
+                                grow your business
+                                <svg class="green-underline" width="380" height="15" viewBox="0 0 380 15" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                    <path d="M3 12C100 6 280 2 377 4" stroke="#00D8F6" stroke-width="4.5" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Premium web design, Next.js development, and SEO optimization. We deliver stunning, high-performing websites tailored to scale your brand.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="tel:+919787361860" class="btn-shiny">
+                                <span>✦ Book a Call</span>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- Right Column: Browser Mockup Dashboard -->
+                <div class="hero-right-col">
+                    <!-- Decorative background lines for mockup -->
+                    <svg class="mockup-connector-lines" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 220 L-40 220 Q -80 220 -80 300 L -80 340" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        <circle cx="-80" cy="340" r="3" fill="#3B82F6"/>
+                    </svg>
+
+                    <!-- Browser Mockup Wrapper -->
+                    <div class="browser-mockup">
+                        <!-- Browser Window Header -->
+                        <div class="browser-header">
+                            <div class="window-dots">
+                                <span class="window-dot red"></span>
+                                <span class="window-dot yellow"></span>
+                                <span class="window-dot green"></span>
+                            </div>
+                            <div class="browser-address">website-performance.ai</div>
+                        </div>
+                        
+                        <!-- Browser Window Body -->
+                        <div class="browser-body">
+                            <!-- Sidebar -->
+                            <div class="mockup-sidebar">
+                                <div class="sidebar-icon active">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                                </div>
+                                <div class="sidebar-icon">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+                                </div>
+                                <div class="sidebar-icon">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                                </div>
+                                <div class="sidebar-icon">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                </div>
+                                <div class="sidebar-icon">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                                </div>
+                            </div>
+                            
+                            <!-- Main Content of Mockup -->
+                            <div class="mockup-content">
+                                <!-- Card: Website Performance Chart -->
+                                <div class="mockup-card card-performance">
+                                    <div class="card-perf-header">
+                                        <span class="card-perf-title">Website Performance</span>
+                                        <div class="growth-badge">
+                                            <span class="arrow-up">↑</span> 128% <span class="growth-text">Growth</span>
+                                        </div>
+                                    </div>
+                                    <!-- Animated Chart Line SVG -->
+                                    <div class="chart-container">
+                                        <svg class="chart-line-svg" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="chart-path" d="M10 65 Q 40 60 70 45 T 130 50 T 190 35 T 250 15" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+                                            <path class="chart-area-path" d="M10 65 Q 40 60 70 45 T 130 50 T 190 35 T 250 15 L 250 80 L 10 80 Z" fill="url(#chart-gradient)"/>
+                                            <defs>
+                                                <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+                                                    <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.2"/>
+                                                    <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.0"/>
+                                                </linearGradient>
+                                            </defs>
+                                            <circle class="pulse-dot" cx="250" cy="15" r="4" fill="#3B82F6"/>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <!-- Grid for Bottom Cards in Mockup -->
+                                <div class="mockup-subgrid">
+                                    <!-- Card: Projects List -->
+                                    <div class="mockup-card card-projects">
+                                        <span class="mockup-card-title">Projects</span>
+                                        <ul class="projects-list">
+                                            <li>
+                                                <span class="proj-name">E-commerce Platform</span>
+                                                <span class="proj-status"><span class="status-dot"></span> Live</span>
+                                            </li>
+                                            <li>
+                                                <span class="proj-name">SaaS Dashboard</span>
+                                                <span class="proj-status"><span class="status-dot"></span> Live</span>
+                                            </li>
+                                            <li>
+                                                <span class="proj-name">AI Web Application</span>
+                                                <span class="proj-status"><span class="status-dot"></span> Live</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <!-- Column for SEO and Optimized Cards -->
+                                    <div class="mockup-right-col">
+                                        <!-- Card: Optimized -->
+                                        <div class="mockup-card card-optimized">
+                                            <div class="opt-header">
+                                                <div class="opt-icon-globe">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+                                                </div>
+                                                <span class="opt-title">Optimized</span>
+                                            </div>
+                                            <div class="opt-bullets">Fast • Secure • Scalable</div>
+                                        </div>
+                                        
+                                        <!-- Card: SEO Score -->
+                                        <div class="mockup-card card-seo">
+                                            <div class="seo-header">
+                                                <div class="seo-icon-shield">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                                </div>
+                                                <span class="seo-title">SEO Score</span>
+                                            </div>
+                                            <div class="seo-score-value">100<span class="seo-total">/100</span></div>
+                                            <div class="seo-progress-bar">
+                                                <div class="seo-progress-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Chat Bubble -->
+                        <div class="floating-chat-bubble">
+                            <div class="chat-avatar-wrapper">
+                                <img src="hero_robot.png" alt="AI Agent Icon" class="chat-avatar">
+                            </div>
+                            <div class="chat-message-content">
+                                <span class="chat-author">Hi! I'm your AI Agent.</span>
+                                <span class="chat-text">How can I help you today?</span>
+                            </div>
+                            <div class="chat-typing-dots">
+                                <span class="typing-dot dot-1"></span>
+                                <span class="typing-dot dot-2"></span>
+                                <span class="typing-dot dot-3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Interactive Technology Marquee under the Hero -->
+            <div class="tech-stack-row-container">
                 <div class="marquee-wrapper">
                     <div class="marquee-content">
-                        <!-- HTML -->
-                        <div class="logo-item" data-name="HTML"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/html5'); mask-image: url('https://cdn.simpleicons.org/html5');"></div></div>
-                        <!-- CSS -->
-                        <div class="logo-item" data-name="CSS"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/css3'); mask-image: url('https://cdn.simpleicons.org/css3');"></div></div>
-                        <!-- JavaScript -->
-                        <div class="logo-item" data-name="JavaScript"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/javascript'); mask-image: url('https://cdn.simpleicons.org/javascript');"></div></div>
-                        <!-- Python -->
-                        <div class="logo-item" data-name="Python"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/python'); mask-image: url('https://cdn.simpleicons.org/python');"></div></div>
-                        <!-- Node.js -->
-                        <div class="logo-item" data-name="Node JS"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/nodedotjs'); mask-image: url('https://cdn.simpleicons.org/nodedotjs');"></div></div>
-                        <!-- MongoDB -->
-                        <div class="logo-item" data-name="Mongo DB"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/mongodb'); mask-image: url('https://cdn.simpleicons.org/mongodb');"></div></div>
-                        <!-- ChatGPT -->
-                        <div class="logo-item" data-name="ChatGPT"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/openai'); mask-image: url('https://cdn.simpleicons.org/openai');"></div></div>
-                        <!-- Gemini -->
-                        <div class="logo-item" data-name="Gemini"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/googlegemini'); mask-image: url('https://cdn.simpleicons.org/googlegemini');"></div></div>
-                        <!-- Claude -->
-                        <div class="logo-item" data-name="Claude"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/anthropic'); mask-image: url('https://cdn.simpleicons.org/anthropic');"></div></div>
-                        <!-- Render -->
-                        <div class="logo-item" data-name="Render"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/render'); mask-image: url('https://cdn.simpleicons.org/render');"></div></div>
-                        <!-- Firebase -->
-                        <div class="logo-item" data-name="Firebase"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/firebase'); mask-image: url('https://cdn.simpleicons.org/firebase');"></div></div>
-                        <!-- Antigravity -->
-                        <div class="logo-item" data-name="Antigravity"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/></svg></div>
-                        <!-- Cursor -->
-                        <div class="logo-item" data-name="Cursor"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/cursor'); mask-image: url('https://cdn.simpleicons.org/cursor');"></div></div>
+                        <!-- Icon 1: Claude -->
+                        <div class="tech-card" data-name="Claude">
+                            <img src="https://cdn.simpleicons.org/anthropic" alt="Claude" width="22" height="22">
+                        </div>
+                        <!-- Icon 2: OpenAI -->
+                        <div class="tech-card" data-name="OpenAI">
+                            <img src="https://api.iconify.design/simple-icons:openai.svg?color=%23000000" alt="OpenAI" width="22" height="22">
+                        </div>
+                        <!-- Icon 3: LangChain -->
+                        <div class="tech-card" data-name="LangChain">
+                            <img src="https://cdn.simpleicons.org/langchain" alt="LangChain" width="22" height="22">
+                        </div>
+                        <!-- Icon 4: Next.js -->
+                        <div class="tech-card" data-name="Next.js">
+                            <img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js" width="22" height="22">
+                        </div>
+                        <!-- Icon 5: React -->
+                        <div class="tech-card" data-name="React">
+                            <img src="https://cdn.simpleicons.org/react" alt="React" width="22" height="22">
+                        </div>
+                        <!-- Icon 6: Node.js -->
+                        <div class="tech-card" data-name="Node.js">
+                            <img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js" width="22" height="22">
+                        </div>
+                        <!-- Icon 7: TypeScript -->
+                        <div class="tech-card" data-name="TypeScript">
+                            <img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" width="22" height="22">
+                        </div>
+                        <!-- Icon 8: Tailwind CSS -->
+                        <div class="tech-card" data-name="Tailwind CSS">
+                            <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind CSS" width="22" height="22">
+                        </div>
+                        <!-- Icon 9: MongoDB -->
+                        <div class="tech-card" data-name="MongoDB">
+                            <img src="https://cdn.simpleicons.org/mongodb" alt="MongoDB" width="22" height="22">
+                        </div>
+                        <!-- Icon 10: PostgreSQL -->
+                        <div class="tech-card" data-name="PostgreSQL">
+                            <img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" width="22" height="22">
+                        </div>
+                        <!-- Icon 11: Firebase -->
+                        <div class="tech-card" data-name="Firebase">
+                            <img src="https://cdn.simpleicons.org/firebase" alt="Firebase" width="22" height="22">
+                        </div>
+                        <!-- Icon 12: n8n -->
+                        <div class="tech-card" data-name="n8n">
+                            <img src="https://cdn.simpleicons.org/n8n" alt="n8n" width="22" height="22">
+                        </div>
+                        <!-- Icon 13: Vite -->
+                        <div class="tech-card" data-name="Vite">
+                            <img src="https://cdn.simpleicons.org/vite" alt="Vite" width="22" height="22">
+                        </div>
+                        <!-- Icon 14: GitHub -->
+                        <div class="tech-card" data-name="GitHub">
+                            <img src="https://cdn.simpleicons.org/github" alt="GitHub" width="22" height="22">
+                        </div>
+                        <!-- Icon 15: Vercel -->
+                        <div class="tech-card" data-name="Vercel">
+                            <img src="https://cdn.simpleicons.org/vercel" alt="Vercel" width="22" height="22">
+                        </div>
                     </div>
-                    <!-- Duplicate for infinite scroll -->
+                    <!-- Duplicate marquee content for infinite scroll -->
                     <div class="marquee-content" aria-hidden="true">
-                        <div class="logo-item" data-name="HTML"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/html5'); mask-image: url('https://cdn.simpleicons.org/html5');"></div></div>
-                        <div class="logo-item" data-name="CSS"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/css3'); mask-image: url('https://cdn.simpleicons.org/css3');"></div></div>
-                        <div class="logo-item" data-name="JavaScript"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/javascript'); mask-image: url('https://cdn.simpleicons.org/javascript');"></div></div>
-                        <div class="logo-item" data-name="Python"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/python'); mask-image: url('https://cdn.simpleicons.org/python');"></div></div>
-                        <div class="logo-item" data-name="Node JS"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/nodedotjs'); mask-image: url('https://cdn.simpleicons.org/nodedotjs');"></div></div>
-                        <div class="logo-item" data-name="Mongo DB"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/mongodb'); mask-image: url('https://cdn.simpleicons.org/mongodb');"></div></div>
-                        <div class="logo-item" data-name="ChatGPT"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/openai'); mask-image: url('https://cdn.simpleicons.org/openai');"></div></div>
-                        <div class="logo-item" data-name="Gemini"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/googlegemini'); mask-image: url('https://cdn.simpleicons.org/googlegemini');"></div></div>
-                        <div class="logo-item" data-name="Claude"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/anthropic'); mask-image: url('https://cdn.simpleicons.org/anthropic');"></div></div>
-                        <div class="logo-item" data-name="Render"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/render'); mask-image: url('https://cdn.simpleicons.org/render');"></div></div>
-                        <div class="logo-item" data-name="Firebase"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/firebase'); mask-image: url('https://cdn.simpleicons.org/firebase');"></div></div>
-                        <div class="logo-item" data-name="Antigravity"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/></svg></div>
-                        <div class="logo-item" data-name="Cursor"><div class="logo-icon" style="-webkit-mask-image: url('https://cdn.simpleicons.org/cursor'); mask-image: url('https://cdn.simpleicons.org/cursor');"></div></div>
+                        <!-- Icon 1: Claude -->
+                        <div class="tech-card" data-name="Claude">
+                            <img src="https://cdn.simpleicons.org/anthropic" alt="Claude" width="22" height="22">
+                        </div>
+                        <!-- Icon 2: OpenAI -->
+                        <div class="tech-card" data-name="OpenAI">
+                            <img src="https://api.iconify.design/simple-icons:openai.svg?color=%23000000" alt="OpenAI" width="22" height="22">
+                        </div>
+                        <!-- Icon 3: LangChain -->
+                        <div class="tech-card" data-name="LangChain">
+                            <img src="https://cdn.simpleicons.org/langchain" alt="LangChain" width="22" height="22">
+                        </div>
+                        <!-- Icon 4: Next.js -->
+                        <div class="tech-card" data-name="Next.js">
+                            <img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js" width="22" height="22">
+                        </div>
+                        <!-- Icon 5: React -->
+                        <div class="tech-card" data-name="React">
+                            <img src="https://cdn.simpleicons.org/react" alt="React" width="22" height="22">
+                        </div>
+                        <!-- Icon 6: Node.js -->
+                        <div class="tech-card" data-name="Node.js">
+                            <img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js" width="22" height="22">
+                        </div>
+                        <!-- Icon 7: TypeScript -->
+                        <div class="tech-card" data-name="TypeScript">
+                            <img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" width="22" height="22">
+                        </div>
+                        <!-- Icon 8: Tailwind CSS -->
+                        <div class="tech-card" data-name="Tailwind CSS">
+                            <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind CSS" width="22" height="22">
+                        </div>
+                        <!-- Icon 9: MongoDB -->
+                        <div class="tech-card" data-name="MongoDB">
+                            <img src="https://cdn.simpleicons.org/mongodb" alt="MongoDB" width="22" height="22">
+                        </div>
+                        <!-- Icon 10: PostgreSQL -->
+                        <div class="tech-card" data-name="PostgreSQL">
+                            <img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" width="22" height="22">
+                        </div>
+                        <!-- Icon 11: Firebase -->
+                        <div class="tech-card" data-name="Firebase">
+                            <img src="https://cdn.simpleicons.org/firebase" alt="Firebase" width="22" height="22">
+                        </div>
+                        <!-- Icon 12: n8n -->
+                        <div class="tech-card" data-name="n8n">
+                            <img src="https://cdn.simpleicons.org/n8n" alt="n8n" width="22" height="22">
+                        </div>
+                        <!-- Icon 13: Vite -->
+                        <div class="tech-card" data-name="Vite">
+                            <img src="https://cdn.simpleicons.org/vite" alt="Vite" width="22" height="22">
+                        </div>
+                        <!-- Icon 14: GitHub -->
+                        <div class="tech-card" data-name="GitHub">
+                            <img src="https://cdn.simpleicons.org/github" alt="GitHub" width="22" height="22">
+                        </div>
+                        <!-- Icon 15: Vercel -->
+                        <div class="tech-card" data-name="Vercel">
+                            <img src="https://cdn.simpleicons.org/vercel" alt="Vercel" width="22" height="22">
+                        </div>
                     </div>
                 </div>
                 <div id="tech-tooltip" class="tech-tooltip"></div>
-            </section>
+            </div>
         </main>
     </div>
 
@@ -195,7 +497,7 @@
                         <li><span>✓</span> Automatic emails</li>
                         <li><span>✓</span> Mobile optimized</li>
                     </ul>
-                    <a href="#" class="btn-pricing btn-green">Get Started →</a>
+                    <a href="tel:+919787361860" class="btn-pricing btn-green">Get Started →</a>
                 </div>
 
                 <div class="pricing-card tier-popular">
@@ -214,7 +516,25 @@
                         <li><span>✓</span> Automatic emails</li>
                         <li><span>✓</span> Mobile optimized</li>
                     </ul>
-                    <a href="#" class="btn-pricing btn-blue">Get Started →</a>
+                    <a href="tel:+919787361860" class="btn-pricing btn-blue">Get Started →</a>
+                </div>
+
+                <div class="pricing-card tier-custom">
+                    <div class="tier-header">
+                        <h3>AI Agents</h3>
+                        <p class="tier-desc">Autonomous, custom-coded agents integrated into your website or business workflow.</p>
+                    </div>
+                    <div class="tier-price">
+                        <span class="payment-type">SINGLE PAYMENT</span>
+                        <div class="price">₹5,999</div>
+                    </div>
+                    <ul class="features-list custom-ticks">
+                        <li><span>✓</span> Custom AI Workflows</li>
+                        <li><span>✓</span> n8n & API Connections</li>
+                        <li><span>✓</span> Live Agent Chatbot Training</li>
+                        <li><span>✓</span> 1-Month Premium Support</li>
+                    </ul>
+                    <a href="tel:+919787361860" class="btn-pricing btn-dark">Get Started →</a>
                 </div>
             </div>
         </div>
@@ -234,7 +554,7 @@
                 </div>
                 <p class="test-body">"PR TECH completely transformed our restaurant's online presence. The new website is absolutely stunning, capturing our exact fine-dining atmosphere while making the reservation process completely seamless. We've seen a massive increase in direct bookings since it went live!"</p>
                 <div class="test-author">
-                    <div class="author-avatar">AK</div>
+                    <img src="testimonial_avatar.png" alt="Kathir Annadurai" class="author-avatar">
                     <div class="author-info">
                         <strong>KATHIR ANNADURAI</strong>
                         <span>Restaurant Owner</span>
@@ -287,6 +607,10 @@
                             <strong>ROI-First</strong>
                             <span>So you get the most out of your ad budget.</span>
                         </div>
+                        <div class="f-item">
+                            <strong>AI Agent Development</strong>
+                            <span>Custom autonomous agents built to automate workflows and support customers.</span>
+                        </div>
                     </div>
                 </div>
 
@@ -303,6 +627,7 @@
                         <span class="pill pill-host">Hosting</span>
                         <span class="pill pill-support">Support</span>
                         <span class="pill pill-strat">Strategy</span>
+                        <span class="pill pill-ai">AI Agents</span>
                     </div>
                 </div>
 
@@ -329,7 +654,7 @@
                     <strong>Built to Scale</strong>
                 </div>
                 <div class="bento-mini mini-card">
-                    <div class="time-badge">Mon - Fri: 10 -</div>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
                     <strong>Easy to Edit</strong>
                 </div>
                 <div class="bento-mini mini-card">
@@ -340,6 +665,45 @@
                         <div class="check-icon">✓</div>
                     </div>
                     <strong>Secure & Compliant</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Agent Solutions Section -->
+    <section id="agent-solutions" class="solutions-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>AI Solutions.</h2>
+                <p>Autonomous systems engineered to accelerate your growth.</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <!-- Card 1: Support -->
+                <div class="solution-card">
+                    <div class="sol-icon-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h3>Customer Support Agents</h3>
+                    <p>Trained directly on your business documents, policies, and knowledgebase to resolve complex client questions 24/7. Integrates with Web Chat, WhatsApp, or email platforms to handle inquiries with human-like precision and instant responses.</p>
+                </div>
+                
+                <!-- Card 2: Sales -->
+                <div class="solution-card">
+                    <div class="sol-icon-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Sales & Lead Qualification</h3>
+                    <p>Acts as a tireless sales rep on your website. Proactively engages visitors, qualifies leads based on custom criteria, gathers contact details, and directly books calendar appointments automatically, transforming traffic into sales pipelines.</p>
+                </div>
+                
+                <!-- Card 3: Automation -->
+                <div class="solution-card">
+                    <div class="sol-icon-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h3>Workflow & API Automation</h3>
+                    <p>Autonomous agents linked to your tech stack via tools like n8n. Automatically syncs databases, updates CRM pipelines, drafts emails, and handles repetitive tasks across different platforms, saving manual labor hours.</p>
                 </div>
             </div>
         </div>
@@ -356,6 +720,10 @@
             <div class="faq-card">
                 <h3>Good to know</h3>
                 <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">What is AI Agent Development? <span class="arrow">↓</span></div>
+                        <div class="faq-answer"><p>AI Agent Development involves building autonomous software systems designed to execute workflows, make decisions, and interact with users or APIs. Unlike basic chatbots, these agents can be trained on your custom documentation, integrate with your tech stack (using tools like n8n and databases), and automate complex workflows like lead qualification, scheduling, or customer support without manual intervention.</p></div>
+                    </div>
                     <div class="faq-item">
                         <div class="faq-question">Why PRTECH.AI? <span class="arrow">↓</span></div>
                         <div class="faq-answer"><p>We deliver premium, custom-coded websites that perform faster, rank better on search engines, and convert visitors into customers. No templates, just tailored solutions for your business.</p></div>
@@ -580,8 +948,14 @@
 
             <div class="footer-bottom">
                 <div class="f-copyright" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                    <img src="logo_horizontal_new.png" alt="PRTECH.AI" style="height: 36px; width: auto;">
-                    <a href="#" style="margin-left: 0.2rem;">© 2026 PRTECH.AI. All rights reserved.</a>
+                    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                        <img src="logo.png" alt="PRTECH Logo" class="logo-img">
+                        <div class="brand-text-container">
+                            <span class="brand-title" style="color: white;">PRTECH<span class="text-gradient-blue">.AI</span></span>
+                            <span class="brand-subtitle" style="color: #9ca3af;">Engineering Intelligent Agents</span>
+                        </div>
+                    </a>
+                    <a href="#" style="margin-left: 1rem; color: #9ca3af; text-decoration: none;">© 2026 PRTECH.AI. All rights reserved.</a>
                 </div>
                 <div class="f-links">
                     <a href="#services">Services</a>

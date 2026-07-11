@@ -71,26 +71,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Email Copy Fallback
+    // Email Copy & Compose Fallback
     const emailLink = document.querySelector('a[href^="mailto:"]');
     if (emailLink) {
         emailLink.addEventListener('click', (e) => {
+            e.preventDefault(); // Stop default mailto from failing silently on desktop
+            
             const email = "prtech.build@gmail.com";
-            navigator.clipboard.writeText(email).then(() => {
-                const tooltip = document.getElementById('tech-tooltip');
-                if (tooltip) {
-                    tooltip.textContent = "Email copied to clipboard!";
-                    const rect = emailLink.getBoundingClientRect();
-                    tooltip.style.left = rect.left + (rect.width / 2) + 'px';
-                    tooltip.style.top = rect.top - 45 + 'px';
-                    tooltip.classList.add('show');
-                    setTimeout(() => {
-                        tooltip.classList.remove('show');
-                    }, 2500);
-                }
-            }).catch(err => {
-                console.error('Failed to copy: ', err);
-            });
+            const subject = "Project Inquiry | PRTECH.AI";
+            const body = "Hi PRTECH Team,\n\nI would like to inquire about your services for my project...\n\nMy Name: \nMy Business: \n\nBest regards,";
+            
+            const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Detect if mobile device
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                // On mobile, native mailto is highly reliable
+                window.location.href = mailtoUrl;
+            } else {
+                // On desktop, copy to clipboard and open Gmail web compose in a new tab
+                navigator.clipboard.writeText(email).then(() => {
+                    const tooltip = document.getElementById('tech-tooltip');
+                    if (tooltip) {
+                        tooltip.textContent = "Opening Gmail (copied to clipboard!)";
+                        const rect = emailLink.getBoundingClientRect();
+                        tooltip.style.left = rect.left + (rect.width / 2) + 'px';
+                        tooltip.style.top = rect.top - 45 + 'px';
+                        tooltip.classList.add('show');
+                        setTimeout(() => {
+                            tooltip.classList.remove('show');
+                        }, 2500);
+                    }
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+                
+                // Open Gmail Web Compose in a new tab
+                window.open(gmailComposeUrl, '_blank');
+            }
         });
     }
 

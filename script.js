@@ -71,6 +71,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Email Copy Fallback
+    const emailLink = document.querySelector('a[href^="mailto:"]');
+    if (emailLink) {
+        emailLink.addEventListener('click', (e) => {
+            const email = "prtech.build@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                const tooltip = document.getElementById('tech-tooltip');
+                if (tooltip) {
+                    tooltip.textContent = "Email copied to clipboard!";
+                    const rect = emailLink.getBoundingClientRect();
+                    tooltip.style.left = rect.left + (rect.width / 2) + 'px';
+                    tooltip.style.top = rect.top - 45 + 'px';
+                    tooltip.classList.add('show');
+                    setTimeout(() => {
+                        tooltip.classList.remove('show');
+                    }, 2500);
+                }
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        });
+    }
+
     // --- LUSION CURSOR & GLOW ---
     const cursor = document.querySelector('.custom-cursor');
     const follower = document.querySelector('.custom-cursor-follower');

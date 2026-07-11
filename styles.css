@@ -413,7 +413,7 @@ body {
 .github-btn:hover { background: #333; transform: scale(1.05) translateY(-2px); }
 
 /* New Complex Footer */
-.complex-footer { background: #0f1115; color: white; padding: 4rem 2rem 2rem 2rem; border-radius: 30px; margin: 0 2rem 2rem 2rem; }
+.complex-footer { background: #0f1115; color: white; padding: 4rem 2rem 2rem 2rem; border-radius: 30px; margin: 0 2rem 2rem 2rem; position: relative; z-index: 20; }
 .footer-container { max-width: 1200px; margin: 0 auto; }
 .footer-top { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem; }
 .green-text { color: var(--green-accent); font-size: 0.9rem; font-weight: 500; display: block; margin-bottom: 1rem; }

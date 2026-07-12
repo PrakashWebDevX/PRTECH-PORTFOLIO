@@ -47,8 +47,9 @@ body {
 .nav-links { display: flex; list-style: none; gap: 2rem; }
 .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 0.9rem; font-weight: 500; display: flex; align-items: center; gap: 0.3rem; transition: color 0.2s; }
 .nav-links a:hover { color: #0f172a; }
-.btn-dark-sm { background: #0f172a; color: white; text-decoration: none; padding: 0.65rem 1.4rem; border-radius: 100px; font-weight: 600; font-size: 0.85rem; transition: all 0.2s; border: 1px solid #1e293b; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15); display: inline-flex; align-items: center; }
-.btn-dark-sm:hover { background: #1e293b; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(15, 23, 42, 0.2); }
+.btn-dark-sm { position: relative; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.06) 50%, rgba(255, 255, 255, 0) 50.1%, rgba(255, 255, 255, 0.02) 100%), rgba(15, 23, 42, 0.9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: white; text-decoration: none; padding: 0.65rem 1.6rem; border-radius: 100px; font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.4rem; border: 1px solid rgba(255, 255, 255, 0.2); border-top-color: rgba(255, 255, 255, 0.35); border-bottom-color: rgba(255, 255, 255, 0.08); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25), 0 0 1px rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.45), inset 0 -4px 8px rgba(0, 0, 0, 0.35), inset 0 4px 8px rgba(255, 255, 255, 0.1); letter-spacing: 0.01em; overflow: hidden; }
+.btn-dark-sm::before { content: ''; position: absolute; top: 1px; left: 10%; right: 10%; height: 35%; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.03)); border-radius: 100px; pointer-events: none; }
+.btn-dark-sm:hover { transform: translateY(-1px); background: linear-gradient(to bottom, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.09) 50%, rgba(255, 255, 255, 0.02) 50.1%, rgba(255, 255, 255, 0.05) 100%), rgba(15, 23, 42, 0.95); border-color: rgba(59, 130, 246, 0.4); border-top-color: rgba(255, 255, 255, 0.45); box-shadow: 0 10px 22px rgba(15, 23, 42, 0.3), 0 0 15px rgba(59, 130, 246, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 -4px 8px rgba(0, 0, 0, 0.35), inset 0 4px 8px rgba(255, 255, 255, 0.15); }
 
 /* --- HERO WRAPPER & DECORATIVE BACKGROUND --- */
 .hero-bg-wrapper { position: relative; padding-top: 140px; padding-bottom: 80px; background-color: #ffffff; background-image: radial-gradient(#e2e8f0 1.5px, transparent 1.5px); background-size: 40px 40px; background-position: center top; overflow: hidden; }
@@ -75,6 +76,33 @@ body {
 .btn-shiny { position: relative; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.06) 50%, rgba(255, 255, 255, 0) 50.1%, rgba(255, 255, 255, 0.02) 100%), rgba(15, 23, 42, 0.9); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); color: white; text-decoration: none; padding: 0.95rem 2.5rem; border-radius: 100px; font-weight: 700; font-size: 1.05rem; display: inline-flex; align-items: center; gap: 0.6rem; border: 1px solid rgba(255, 255, 255, 0.2); border-top-color: rgba(255, 255, 255, 0.35); border-bottom-color: rgba(255, 255, 255, 0.08); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 15px 35px rgba(15, 23, 42, 0.4), 0 0 1px rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.45), inset 0 -8px 16px rgba(0, 0, 0, 0.35), inset 0 8px 16px rgba(255, 255, 255, 0.1); letter-spacing: 0.02em; overflow: hidden; }
 .btn-shiny::before { content: ''; position: absolute; top: 2px; left: 10%; right: 10%; height: 35%; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.03)); border-radius: 100px; pointer-events: none; }
 .btn-shiny:hover { transform: translateY(-2px); background: linear-gradient(to bottom, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.09) 50%, rgba(255, 255, 255, 0.02) 50.1%, rgba(255, 255, 255, 0.05) 100%), rgba(15, 23, 42, 0.95); border-color: rgba(59, 130, 246, 0.4); border-top-color: rgba(255, 255, 255, 0.45); box-shadow: 0 20px 40px rgba(15, 23, 42, 0.45), 0 0 25px rgba(59, 130, 246, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 -8px 16px rgba(0, 0, 0, 0.35), inset 0 8px 16px rgba(255, 255, 255, 0.15); }
+
+/* Buttons Active Tactile Press States */
+.btn-shiny:active, .btn-dark-sm:active {
+    transform: translateY(1px) scale(0.96) !important;
+    box-shadow: 
+        0 4px 10px rgba(15, 23, 42, 0.3),
+        0 0 1px rgba(255, 255, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35),
+        inset 0 -4px 8px rgba(0, 0, 0, 0.4),
+        inset 0 4px 8px rgba(255, 255, 255, 0.08) !important;
+    transition: all 0.08s ease;
+}
+
+/* Button Shaking Effect (Occasional eye-catching nudge) */
+@keyframes shake-nudge {
+    0%, 88%, 100% { transform: rotate(0deg) scale(1); }
+    90%, 94% { transform: rotate(-2.5deg) scale(1.025); }
+    92%, 96% { transform: rotate(2.5deg) scale(1.025); }
+    98% { transform: rotate(0deg) scale(1.025); }
+}
+.btn-shake-wrapper {
+    display: inline-block;
+    animation: shake-nudge 6s ease-in-out infinite;
+}
+.btn-shake-wrapper:hover {
+    animation: none; /* Pause shaking when hovering */
+}
 
 /* --- LEFT COLUMN (ROBOT & BADGES) --- */
 .hero-left-col { position: relative; height: 480px; display: flex; align-items: center; justify-content: center; z-index: 9; }
